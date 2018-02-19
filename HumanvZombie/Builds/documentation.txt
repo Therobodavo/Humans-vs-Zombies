@@ -1,0 +1,30 @@
+David Knolls
+IGME 202, Section 2
+
+Assignment:  
+Humans vs Zombies
+
+Description:  
+This projects uses AA's to createa "zombie" that tracks down any nearby humans and infects them into being a zombie. These zombies go until all humans have been infected, then they wander around.The user can also spawn in humans, zombies, and med packs.
+
+User Responsibilities:
+The user initially can just watch the simulation play out, but they also can left click with their mouse to spawn in the current object. Initially it's set to humans, but by pressing F you can toggle it to spawn in zombies or med packs as well. Pressing d will also toggle debug mode, which shows debug lines as well as circles for future positions.
+
+Above and Beyond:
+I added a display for the user to see
+I added the ability to toggle between what you can spawn in (pressing F)
+I added the ability to spawn in humans and zombies by left clicking on the place
+I added the ability to spawn in med packs, which when walked over by a zombie.. it will turn the zombie into a human. 
+
+Known Issues:
+- Program was crashing due to having deleted objects set as targets even after being changed (when zombies turned into humans, and the other way around).. so I used try-catch's to stop everything from crashing
+- When zombies get close to humans, they jump straight at the humans. I believe this happened because of having a zombie prefab on the zombie script.. which somehow linked it? I couldn't figure the issue out.
+Notes:
+I delt with roommate issues this past week so I'm using my grace period for this project.
+Also, the camera position was kind of hard to do because if i zoomed out everything was really small, so i positioned it so you could see most everything. When humans/zombies go off the viewable screen, they are still on the plane.. everything stays within the plane like it's supposed to.
+
+Sources:
+Human - https://www.assetstore.unity3d.com/en/#!/content/51662
+Zombie - https://www.assetstore.unity3d.com/en/#!/content/30232
+Tree - https://www.assetstore.unity3d.com/en/#!/content/67167
+Med Pack - https://www.assetstore.unity3d.com/en/#!/content/50444
